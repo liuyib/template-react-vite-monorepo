@@ -1,0 +1,32 @@
+{
+  "name": "react-vite-monorepo-template",
+  "private": true,
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "keywords": [],
+  "author": "liuyib<https://github.com/liuyib>",
+  "license": "MIT",
+  "scripts": {
+    "biome": "biome check --write --no-errors-on-unmatched",
+    "prettier": "prettier --write --cache *.{md,yml,yaml} --no-error-on-unmatched-pattern",
+    "format": "biome format --write && pnpm run prettier",
+    "prepare": "husky"
+  },
+  "lint-staged": {
+    "*.{ts,tsx,js,jsx,css,mjs,json}": [
+      "pnpm run biome"
+    ],
+    "*.{md,yml,yaml}": [
+      "pnpm run prettier"
+    ]
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^2.1.1",
+    "@commitlint/cli": "^19.8.1",
+    "@commitlint/config-conventional": "^19.8.1",
+    "husky": "^9.1.7",
+    "lint-staged": "^16.1.2",
+    "prettier": "^3.6.2"
+  }
+}
