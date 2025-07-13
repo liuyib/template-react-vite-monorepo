@@ -1,5 +1,5 @@
 import { ViteIcon } from '@repo/icons';
-import { Button } from '@repo/ui';
+import { Button, ConfigProvider } from '@repo/ui';
 import { useState } from 'react';
 
 function App() {
@@ -8,7 +8,17 @@ function App() {
   return (
     <>
       Hello <ViteIcon />
-      <Button onClick={() => setCount((s) => s + 1)}>Click me, {count}</Button>
+      <ConfigProvider
+        theme={{
+          hashed: true,
+          cssVar: true,
+          token: {
+            colorPrimary: 'red',
+          },
+        }}
+      >
+        <Button onClick={() => setCount((s) => s + 1)}>Click me, {count}</Button>
+      </ConfigProvider>
     </>
   );
 }
