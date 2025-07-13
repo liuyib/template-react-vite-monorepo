@@ -16,15 +16,8 @@ export default defineConfig({
     minify: true,
     lib: {
       entry: path.join(__dirname, 'src/index.tsx'),
-      name: 'UmdUI',
       fileName: (format) => `index.${format}.js`,
-      formats: ['es', 'cjs', 'umd'],
+      formats: ['es', 'cjs'],
     },
-  },
-  test: {
-    name: 'happy-dom-env',
-    environment: 'happy-dom',
-    include: ['src/**/*.test.{ts,tsx}'],
-    globals: true,
   },
 });

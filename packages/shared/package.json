@@ -1,17 +1,12 @@
 {
-  "name": "@repo/ui",
+  "name": "@repo/shared",
   "version": "0.0.1",
   "type": "module",
   "main": "./dist/index.cjs.js",
   "module": "./dist/index.es.js",
-  "unpkg": "./dist/index.umd.js",
   "types": "./dist/index.d.ts",
   "scripts": {
-    "dev": "vite",
-    "test": "vitest --run",
-    "test:dev": "vitest",
-    "build": "vite build",
-    "preview": "vite preview"
+    "build": "vite build"
   },
   "exports": {
     ".": {
@@ -25,10 +20,6 @@
     "README.md",
     "package.json"
   ],
-  "dependencies": {
-    "@repo/icons": "workspace:*",
-    "@repo/shared": "workspace:*"
-  },
   "peerDependencies": {
     "react": ">=16.8.0",
     "react-dom": ">=16.8.0"
