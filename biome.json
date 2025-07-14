@@ -7,7 +7,7 @@
   },
   "files": {
     "ignoreUnknown": true,
-    "includes": ["**", "!**/es/**", "!**/lib/**", "!**/dist/**"]
+    "includes": ["**", "!**/es/**", "!**/lib/**", "!**/dist/**", "!.dumi/tmp*"]
   },
   "formatter": {
     "enabled": true,
