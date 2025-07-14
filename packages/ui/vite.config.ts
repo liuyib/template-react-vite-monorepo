@@ -26,5 +26,9 @@ export default defineConfig({
     environment: 'happy-dom',
     include: ['src/**/*.test.{ts,tsx}'],
     globals: true,
+    // 性能优化：https://cn.vitest.dev/guide/improving-performance
+    isolate: false,
+    fileParallelism: false,
+    pool: 'threads',
   },
 });
