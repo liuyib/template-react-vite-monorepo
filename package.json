@@ -13,6 +13,7 @@
     "test": "pnpm -r --parallel --filter=./packages/* run test",
     "docs": "dumi dev",
     "docs:build": "dumi build",
+    "docs:preview": "dumi preview",
     "biome": "biome check --write --no-errors-on-unmatched",
     "prettier": "prettier --write --cache *.{md,yml,yaml} --no-error-on-unmatched-pattern",
     "format": "biome format --write && pnpm run prettier",
