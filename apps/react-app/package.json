@@ -13,8 +13,6 @@
   "dependencies": {
     "@repo/icons": "workspace:*",
     "@repo/shared": "workspace:*",
-    "@repo/ui": "workspace:*",
-    "react": "^18.0.0",
-    "react-dom": "^18.0.0"
+    "@repo/ui": "workspace:*"
   }
 }

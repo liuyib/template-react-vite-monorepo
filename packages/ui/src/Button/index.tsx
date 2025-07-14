@@ -1,21 +1,9 @@
-import React from 'react';
-import { DesignTokenContext } from '../ConfigProvider';
+import { Button as AntdButton, type ButtonProps as AntdButtonProps } from 'antd';
 
-export interface ButtonProps extends React.PropsWithChildren {
-  onClick?: () => void;
-}
+export interface ButtonProps extends AntdButtonProps {}
 
 const Button = ({ children, ...props }: ButtonProps) => {
-  const res = React.useContext(DesignTokenContext);
-  console.log('res:', res);
-
-  // TODO: 使用 @ant-design/cssinjs 改造，然后接入 dumi
-
-  return (
-    <button type="button" {...props}>
-      {children}
-    </button>
-  );
+  return <AntdButton {...props}>{children}</AntdButton>;
 };
 
 export default Button;

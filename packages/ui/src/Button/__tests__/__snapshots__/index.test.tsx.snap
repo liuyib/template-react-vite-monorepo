@@ -6,12 +6,14 @@ exports[`Button > renders correctly 1`] = `
   "baseElement": <body>
     <div>
       <button
+        class="ant-btn css-dev-only-do-not-override-pjilya ant-btn-default ant-btn-color-default ant-btn-variant-outlined"
         type="button"
       />
     </div>
   </body>,
   "container": <div>
     <button
+      class="ant-btn css-dev-only-do-not-override-pjilya ant-btn-default ant-btn-color-default ant-btn-variant-outlined"
       type="button"
     />
   </div>,

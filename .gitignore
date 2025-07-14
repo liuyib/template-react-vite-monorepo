@@ -24,3 +24,10 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+.umi
+.umi-test
+.umi-production
+.dumi/tmp
+.dumi/tmp-test
+.dumi/tmp-production
