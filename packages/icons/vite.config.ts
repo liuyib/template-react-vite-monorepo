@@ -6,13 +6,7 @@ import svgr from 'vite-plugin-svgr';
 
 // https://vite.dev/config/
 export default defineConfig({
-  plugins: [
-    react(),
-    svgr(),
-    dts({
-      tsconfigPath: './tsconfig.app.json',
-    }),
-  ],
+  plugins: [react(), svgr(), dts()],
   build: {
     outDir: 'dist',
     minify: true,
