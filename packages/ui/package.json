@@ -30,7 +30,8 @@
     "@ant-design/cssinjs-utils": "^1.1.3",
     "@repo/icons": "workspace:*",
     "@repo/shared": "workspace:*",
-    "antd": "^5.26.4"
+    "antd": "^5.26.4",
+    "classnames": "^2.5.1"
   },
   "peerDependencies": {
     "react": ">=16.8.0",
